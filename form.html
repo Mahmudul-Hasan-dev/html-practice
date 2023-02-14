@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="nav.html">Home</a></li>
+                <li><a href="Table.html">Salary-sheet</a></li>
+                <li><a href="form.html">form</a>
+                    <ul class="dropdown">
+                        <li><a href="login.html">login form</a></li>
+                        <li><a href="regi-form.html">registration form</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">login form</a></li>
+                <li><a href="regi-form.html">registration form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Pitha ghor</h2>
+    <form action="">
+        <!-- <label for="name">Your name</label>
+        <input id="name" type="text" placeholder="Enter your name">
+        <label for="email">Your email</label>
+        <input id="email" type="email" placeholder="Enter your email"> -->
+
+        <label for="name">Your name
+            <input id="name" type="text" placeholder="Enter your name">
+        </label>
+
+        <label for="email">Your email
+            <input id="email" type="email" placeholder="Enter your email">
+        </label>
+        <label for="phone">Your phone Number
+            <input id="phone" type="number" placeholder="Enter your phone number">
+        </label>
+        <fieldset>
+            <legend>Pick One of our pitha</legend>
+            <label for="chitoi">
+                <input type="radio" name="pitha" id="chitoi">chitoi
+            </label>
+            <label for="Vapa">
+                <input type="radio" name="pitha" id="Vapa">Vapa
+            </label>
+            <label for="cocunut">
+                <input type="radio" name="pitha" id="cocunut">cocunut
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>select tasty vorta from our tasty menu</legend>
+            <label for="sorisa">
+                <input type="checkbox" name="vorta" id="sorisa">sorisa
+            </label>
+            <label for="sutki">
+                <input type="checkbox" name="vorta" id="sutki">sutki
+            </label>
+            <label for="dal">
+                <input type="checkbox" name="vorta" id="dal">dal
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Special Instruction</legend>
+            <textarea name="special-instruction" id="sinstruction" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+
+</html>

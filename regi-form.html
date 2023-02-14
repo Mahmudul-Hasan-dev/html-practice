@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <style>
+        label {
+            display: block;
+            padding: 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="nav.html">Home</a></li>
+                <li><a href="Table.html">Salary-sheet</a></li>
+                <li><a href="form.html">form</a>
+                    <ul class="dropdown">
+                        <li><a href="login.html">login form</a></li>
+                        <li><a href="regi-form.html">registration form</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">login form</a></li>
+                <li><a href="regi-form.html">registration form</a></li>
+            </ul>
+        </nav>
+        <h3>Welcome,Thank you for registration</h3>
+    </header>
+    <main>
+        <form action="">
+            <h3>Registration form</h3>
+            <label for="firstname">First name
+                <input type="text" id="fname" placeholder="Enter your first name">
+            </label>
+            <label for="lastname">Last name
+                <input type="text" id="lname" placeholder="Enter your last name">
+            </label>
+            <label for="email">Email
+                <input type="email" id="email" placeholder="Enter your email">
+            </label>
+            <label for="phone">Phone Number
+                <input type="number" id="phone" placeholder="Enter your contact">
+            </label>
+            <label for="password">password
+                <input type="password" id="password" placeholder="Enter your password">
+            </label>
+            <fieldset>
+                <legend>select your user role</legend>
+                <label for="admin"><input type="radio" id="admin" name="user">Admin</label>
+                <label for="admin"><input type="radio" id="seller" name="user">Seller</label>
+                <label for="admin"><input type="radio" id="buyer" name="user">Buyer</label>
+            </fieldset>
+            <fieldset>
+                <legend>Select Your gender & Identity(select any two only)</legend>
+                <label for="male"><input type="checkbox" id="male" name="gi">Male</label>
+                <label for="female"><input type="checkbox" id="female" name="gi">Female</label>
+                <label for="student"><input type="checkbox" id="student" name="gi">Student</label>
+                <label for="jobholder"><input type="checkbox" id="jholder" name="gi">job Holder</label>
+                <label for="unemployed"><input type="checkbox" id="uemployed" name="gi">unemployed</label>
+            </fieldset>
+            <fieldset>
+                <legend>Enter Your Address</legend>
+                <textarea name="address" id="address" placeholder="Enter your address here" cols="30"
+                    rows="10"></textarea>
+            </fieldset>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+
+</html>
